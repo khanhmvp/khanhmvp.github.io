@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio - Dark Mode</title>
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME ICONS -->
+    <script src="https://kit.fontawesome.com/4b93f8d8cc.js" crossorigin="anonymous"></script>
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <canvas id="bg"></canvas>
+
+        <div class="hero-content">
+            <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
+            <p class="subtitle">I am a Backend Developer</p>
+
+            <a href="#about" class="btn">About Me</a>
+
+            <div class="socials">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="avatar">
+            <img src="https://i.imgur.com/8Km9tLL.png" alt="avatar">
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-text">
+            I am a backend/cloud engineer with experience in OpenStack, SDN (Ryu),  
+            virtualization (KVM/QEMU), and high-performance networking.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skill-box">
+            <p>Python</p>
+            <div class="progress"><div style="width: 90%"></div></div>
+        </div>
+
+        <div class="skill-box">
+            <p>C/C++</p>
+            <div class="progress"><div style="width: 85%"></div></div>
+        </div>
+
+        <div class="skill-box">
+            <p>OpenStack</p>
+            <div class="progress"><div style="width: 80%"></div></div>
+        </div>
+
+        <div class="skill-box">
+            <p>SDN (Ryu)</p>
+            <div class="progress"><div style="width: 75%"></div></div>
+        </div>
+
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+
+        <div class="timeline">
+            <div class="edu-card">
+                <h3>PTIT University</h3>
+                <p>Bachelor of Telecommunications</p>
+                <span>2021 - 2025</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Work / Projects</h2>
+
+        <div class="project-list">
+
+            <div class="project-card">
+                <h3>5G Network Slicing SDN Controller</h3>
+                <p>Designed QoS-aware slices using Ryu, Mininet, and HTB queues.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>OpenStack High Performance Cluster</h3>
+                <p>NUMA + CPU pinning + SR-IOV + OVS-DPDK for near bare-metal VM performance.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Network Benchmark Suite</h3>
+                <p>Automated Gbps/PPS testing with pktgen and iperf3.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="timeline">
+            <div class="edu-card">
+                <h3>Cloud / SDN Research</h3>
+                <p>Working on virtualization, OpenStack, NUMA scheduling, Ryu QoS control.</p>
+                <span>2023 - Present</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact Me</h2>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message"></textarea>
+            <button class="btn">Send</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
